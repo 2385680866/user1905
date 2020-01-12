@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//用户注册
+Route::get('/reg1',"Admin\UserController@reg1");
+Route::get('/reg',"Admin\UserController@reg2");
+//用户登录
+Route::get('/login',"Admin\UserController@login");
+//用户列表
+Route::get('/list',"Admin\\UserController@list");
